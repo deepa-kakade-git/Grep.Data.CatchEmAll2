@@ -1,15 +1,54 @@
 # Part 1
 ### a)
-
-
+grep '^beed.*rill$' forest/filescan_00.1
+grep '^pika.*chu$' forest/filescan_00.1
+grep '^butt.*erfree$' forest/filescan_00.1
+grep '^bulb.*asaur$' forest/filescan_00.1
+grep '^char.*izard$' forest/filescan_00.2
+grep '^char.*meleon$' forest/filescan_00.2
+grep '^char.*mander$' forest/filescan_00.2
+grep '^jigg.*lypuff$' forest/filescan_00.3
+grep '^meow.*th$' forest/filescan_00.3
+grep '^ivys.*aur$' forest/filescan_00.3
+grep '^psyd.*uck$' forest/filescan_00.4
+grep '^squi.*rtle$' forest/filescan_00.4
+grep '^venu.*saur$' forest/filescan_00.4
+grep '^wart.*ortle$' forest/filescan_00.4
 
 
 ### b)
+rep '^beed.*rill$' forest/filescan_00.1 > captured/beedrill.txt
+grep '^pika.*chu$' forest/filescan_00.1 > captured/pikachu.txt
+grep '^butt.*erfree$' forest/filescan_00.1 > captured/butterfree.txt
+grep '^bulb.*asaur$' forest/filescan_00.1 > captured/bulbasaur.txt
+grep '^char.*rizard$' forest/filescan_00.2 > captured/charizard.txt
+grep '^char.*mander$' forest/filescan_00.2 > captured/charmander.txt
+grep '^jigg.*lypuff$' forest/filescan_00.3 > captured/jigglypuff.txt
+grep '^meow.*th$' forest/filescan_00.3 > captured/meowth.txt
+grep '^ivys.*aur$' forest/filescan_00.3 > captured/ivysaur.txt
+grep '^psyd.*uck$' forest/filescan_00.4 > captured/psyduck.txt
+grep '^squi.*rtle$' forest/filescan_00.4 > captured/squirtle.txt
+grep '^venu.*saur$' forest/filescan_00.4 > captured/venusaur.txt
+grep '^wart.*ortle$' forest/filescan_00.4 > captured/wartortle.txt
+
 
 
 
 ### c)
 
+beedrill filescan_00.1
+filescan_00.1 > captured/pikachu.txt
+filescan_00.1 > captured/butterfree.txt
+filescan_00.1 > captured/bulbasaur.txt
+filescan_00.2 > captured/charizard.txt
+filescan_00.2 > captured/charmander.txt
+filescan_00.3 > captured/jigglypuff.txt
+filescan_00.3 > captured/meowth.txt
+filescan_00.3 > captured/ivysaur.txt
+filescan_00.4 > captured/psyduck.txt
+filescan_00.4 > captured/squirtle.txt
+filescan_00.4 > captured/venusaur.txt
+filescan_00.4 > captured/wartortle.txt
 
 
 
@@ -24,13 +63,34 @@
 
 # Part 2
 ### a)
+grep -c "...." ./captured/*
 
+deepa@Zipcoders-MacBook-Pro-5 Grep.Data.CatchEmAll2 % grep -c "...." ./captured/*
+./captured/beedrill.txt:40
+./captured/bulbasaur.txt:30
+./captured/butterfree.txt:38
+./captured/charizard.txt:39
+./captured/charmander.txt:36
+./captured/charmeleon.txt:37
+./captured/instruction.txt:1
+./captured/ivysaur.txt:33
+./captured/jigglypuff.txt:34
+./captured/meowth.txt:33
+./captured/pikachu.txt:40
+./captured/psyduck.txt:37
+./captured/squirtle.txt:34
 
 
 
 
 
 ### b)
+ls -1 | wc -l
+
+deepa@Zipcoders-MacBook-Pro-5 captured % ls -1 | wc -l
+      15
+
+
 
 
 
